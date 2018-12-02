@@ -1,0 +1,5 @@
+.header {
+  padding: .5em .7em;
+  background-color: orange;
+}
+.header .logo { font-weight: 700; }
