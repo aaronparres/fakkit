@@ -2,4 +2,4 @@
   padding: .5em .7em;
   background-color: orange;
 }
-.header .logo { font-weight: 700; }
+.header .logo { font-weight: bold; }
