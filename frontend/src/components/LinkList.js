@@ -13,13 +13,13 @@ export default class LinkList extends Component {
 
   componentDidMount = () => {
     axios.get("http://localhost:4000/links")
-      .then(response =>{
+      .then(response => {
         this.setState({
           links: response.data,
           loading: false
         })
       });
-  }  
+  }
 
   render() {
 
@@ -27,14 +27,12 @@ export default class LinkList extends Component {
       return <p>Loading...</p>
     }
 
-    let {links} = this.state;
-    
+    let { links } = this.state;
+
     return (
       <div>
-        {links.map((link, index) => 
-          <Link key={link.id} 
-                index={index+1}      
-                link={link} />
+        {links.map((link, index) =>
+          <Link key={link.id} index={index + 1} link={link} />
         )}
       </div>
     )

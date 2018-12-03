@@ -3,7 +3,7 @@ import './Link.css'
 
 export default class Link extends Component {
     render() {
-        let {link, index} = this.props;
+        let { link, index } = this.props;
         return (
             <div className="link">
                 <span className="index">{index}.</span>
