@@ -1,0 +1,19 @@
+.link{
+    display: flex;
+    padding: .5em .7em;
+}
+
+.link a{
+    text-decoration: none;
+    font-weight: 600;
+}
+
+.link .index{  
+    margin-right: .4em;
+    color: gray;
+}
+
+.link .info{
+    color: gray;
+    font-size: 85%;
+}
