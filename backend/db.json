@@ -2,6 +2,13 @@
     "links": [
         {
             "title": "CITM ",
+            "url": "http://www.citm.upc.edu",
+            "score": 5
+        },
+        {
+            "title": "UPC ",
+            "url": "http://www.upc.edu",
+            "score": 3
         }
     ]
 }
