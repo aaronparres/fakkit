@@ -51,6 +51,7 @@ export default class LoginForm extends Component {
     }
 
     render() {
+        document.title = "fakkit | login";
         let { username, password, status } = this.state;
         let errorMessage;
         if (status !== ("login error" && "login correct")) {

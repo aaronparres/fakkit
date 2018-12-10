@@ -47,6 +47,7 @@ export default class NewLink extends Component {
 
     render() {
         let { title, URL } = this.state;
+        document.title = "fakkit | new link";
         return (
             <div className="new-link">
                 <form onSubmit={this.onSubmit}>

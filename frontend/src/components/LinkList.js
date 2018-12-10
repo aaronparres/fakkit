@@ -22,7 +22,7 @@ export default class LinkList extends Component {
   }
 
   render() {
-
+    document.title = "fakkit | home";
     if (this.state.loading) {
       return <p>Loading...</p>
     }
