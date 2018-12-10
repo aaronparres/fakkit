@@ -44,7 +44,7 @@ export default class LoginForm extends Component {
             })
             .catch(err => {
                 //TODO: Show error
-                this.setState({ status: "username or password doesn't exist", password: "", username: ""});
+                this.setState({ status: "username or password doesn't exist", password: "", username: "" });
             });
 
 
@@ -53,12 +53,11 @@ export default class LoginForm extends Component {
     render() {
         let { username, password, status } = this.state;
         let errorMessage;
-        if (status != "login error" && status !="login correct") {
+        if (status !== ("login error" && "login correct")) {
             errorMessage = <div className="error">{status}</div>
         }
         return (
             <div className="login">
-                {errorMessage}
                 <form onSubmit={this.onSubmit}>
                     <label>Username</label>
                     <input type="text" value={username} onChange={this.onChangeUsername} />
@@ -66,6 +65,7 @@ export default class LoginForm extends Component {
                     <input type="password" value={password} onChange={this.onChangePassword} />
                     <button type="submit">Login</button>
                 </form>
+                {errorMessage}
             </div>
         );
     }

@@ -23,7 +23,7 @@ export default class Header extends Component {
     return (
       <div className="header">
         <div className="left">
-          <span className="logo">fakkit</span>
+          <Link to="/"><span className="logo">fakkit</span></Link>
           {newLink}
         </div>
         <div className="right">

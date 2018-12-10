@@ -8,6 +8,7 @@
 .header .logo { 
   font-weight: bold;
   margin-right: 1em;
+  color: black;
 }
 
 .header a{
