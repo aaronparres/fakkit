@@ -9,7 +9,7 @@ export default class Link extends Component {
         let upVote = null;
 
         if (this.context.user) {
-            upVote = "up";
+            upVote = <div className="upArrow"></div>;
         }
 
         return (

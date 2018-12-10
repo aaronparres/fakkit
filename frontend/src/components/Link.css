@@ -17,3 +17,11 @@
     color: gray;
     font-size: 85%;
 }
+
+.link .upArrow{
+    height: 10px;
+    width: 10px;
+    margin: 6px .3em 0 0;
+    background-color: grey;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}

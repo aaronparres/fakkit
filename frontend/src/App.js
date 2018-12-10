@@ -5,6 +5,7 @@ import './App.css';
 import Header from './components/Header';
 import LinkList from './components/LinkList';
 import NewLink from './components/NewLink';
+import LoginForm from './components/LoginForm';
 
 import Context from './Context';
 
@@ -30,6 +31,7 @@ class App extends Component {
             <Header />
             <Route path="/" exact component={LinkList} />
             <Route path="/new" component={NewLink} />
+            <Route path="/login" component={LoginForm} />
           </div>
         </Router>
       </Context.Provider>

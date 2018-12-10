@@ -26,5 +26,15 @@
       "by": "Chico Malo",
       "id": "0qkILuM"
     }
+  ],
+  "users": [
+    {
+      "id": "xaxico",
+      "password": "1234"
+    },
+    {
+      "id": "xaxoman",
+      "password": "abcd"
+    }
   ]
 }

@@ -1,0 +1,22 @@
+.login{
+    padding: 2em;
+}
+
+.login form{
+    display: flex;
+    flex-direction: column;
+}
+
+.login form input{
+    width: 15em;
+}
+
+.login form button{
+    margin-top: .7em;
+    width: 7em;
+}
+
+.login .error {
+    padding-bottom: .5em;
+    color: red;
+}
