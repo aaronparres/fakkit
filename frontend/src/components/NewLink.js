@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import axios from 'axios'
+import Context from '../Context';
 import './NewLink.css'
 
 const Field = (props) =>
@@ -36,7 +37,7 @@ export default class NewLink extends Component {
         axios.post("http://localhost:4000/links", {
             title: this.state.title,
             url: this.state.URL,
-            by: "Chico Malo"
+            by: this.context.user,
         }).then(response => {
             //change the page to the root page _without_ keeping the current page in the history
             this.props.history.replace("/");
@@ -59,3 +60,5 @@ export default class NewLink extends Component {
         )
     }
 }
+
+NewLink.contextType = Context;
