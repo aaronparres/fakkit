@@ -12,7 +12,7 @@ export default class LinkList extends Component {
   }
 
   componentDidMount = () => {
-    axios.get("http://localhost:4000/links")
+    axios.get("http://localhost:4000/links?_embed=votes")
       .then(response => {
         this.setState({
           links: response.data,

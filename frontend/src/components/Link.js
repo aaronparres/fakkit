@@ -19,7 +19,7 @@ export default class Link extends Component {
                 <div className="content">
                     <a href={link.url}>{link.title}</a>
                     <div className="info">
-                        {link.score} points by {link.by}
+                        {link.votes.length} points by {link.by}
                     </div>
                 </div>
             </div>
