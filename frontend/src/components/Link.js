@@ -7,9 +7,15 @@ export default class Link extends Component {
 
         let { link, index } = this.props;
         let upVote = null;
+        //findIndex returns -1 when it doesn't find what i looks for
+        const hasVoted = link.votes.findIndex(vote => vote.userId === this.context.user) !== -1;
 
         if (this.context.user) {
-            upVote = <div className="upArrow"></div>;
+            if (!hasVoted) {
+                upVote = <div className="upArrow"></div>;
+            } else {
+                upVote = <div className="arrowSpace"></div>;
+            }
         }
 
         return (
