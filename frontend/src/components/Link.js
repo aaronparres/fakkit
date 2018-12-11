@@ -1,8 +1,20 @@
 import React, { Component } from 'react'
 import './Link.css';
 import Context from '../Context';
+import Axios from 'axios';
 
 export default class Link extends Component {
+
+    onUpvote = (e) => {
+        Axios.post("http://localhost:4000/votes", {
+            userId: this.context.user,
+            linkId: this.props.link.id,
+        }).then(response => {
+            const vote = response.data;
+            this.props.onUpvote(vote);
+        })
+    }
+
     render() {
 
         let { link, index } = this.props;
@@ -12,7 +24,7 @@ export default class Link extends Component {
 
         if (this.context.user) {
             if (!hasVoted) {
-                upVote = <div className="upArrow"></div>;
+                upVote = <div className="upArrow" onClick={this.onUpvote}></div>;
             } else {
                 upVote = <div className="arrowSpace"></div>;
             }
