@@ -25,6 +25,12 @@
       "url": "http://www.ebay.es",
       "by": "Chico Malo",
       "id": "0qkILuM"
+    },
+    {
+      "title": "Copy from the original",
+      "url": "https://www.reddit.com/",
+      "by": "agustijoputa",
+      "id": "FRAmTMm"
     }
   ],
   "users": [
@@ -35,6 +41,27 @@
     {
       "id": "xaxoman",
       "password": "abcd"
+    },
+    {
+      "id": "agustijoputa",
+      "password": "4567"
+    }
+  ],
+  "votes": [
+    {
+      "id": 1,
+      "userId": "xaxico",
+      "linkId": "kexKC39"
+    },
+    {
+      "id": 2,
+      "userId": "xaxoman",
+      "linkId": "kexKC39"
+    },
+    {
+      "id": 3,
+      "userId": "xaxoman",
+      "linkId": "0qkILuM"
     }
   ]
 }
